@@ -1,0 +1,3509 @@
+.dfspp_CSdsfgORoot_2I6Vt{
+	width:100%;
+	height:100%
+}
+html {
+	scroll-behavior: smooth;
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+@keyframes blogentrypage_loading-in_14IUI{
+	0%{
+		opacity:0;
+		transform:translateY(300px)
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
+@-webkit-keyframes blogentrypage_loading-in_14IUI{
+	0%{
+		opacity:0;
+		transform:translateY(300px)
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+.bsdf34fdf .micaaf3245fdg .micsrto32fsdfjsdf .fdg2345sdcsafhrtrt{
+	display:none;
+	width:0
+}
+.bsdf34fdf .micaaf3245fdg .micsrto32fsdfjsdf .microsaj340adffgjkjo{
+	display:flex
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+.micaaf3245fdg{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	height:80px;
+	padding:0 30px;
+	color:#1e202f;
+	top:0;
+	position:absolute;
+	z-index:9999
+}
+.micaaf3245fdg .micsrto32fsdfjsdf{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .logogogsf{
+	width:300px;
+	min-width:200px;
+	height:70px;
+	min-height:50px;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/global/logo_cs_full_blk.svg);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:.8;
+	margin:10px 50px
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .logogogsf:hover{
+	opacity:1;
+	cursor:pointer
+}
+@media (max-width:700px){
+	.micaaf3245fdg .micsrto32fsdfjsdf .logogogsf{
+		display:block
+	}
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .Ksfok23rjapdojfsf{
+	flex-grow:1;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin-top:10px;
+	position:relative
+}
+@media (max-width:700px){
+	.micaaf3245fdg .micsrto32fsdfjsdf .Ksfok23rjapdojfsf{
+		justify-content:center
+	}
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .Ksfok23rjapdojfsf .asf435dwfasf{
+	position:absolute;
+	top:64px;
+	right:0;
+	color:#fff;
+	padding-top:10px;
+	padding-bottom:5px;
+	background-color:rgba(244,244,244,.2);
+	backdrop-filter:blur(10px);
+	opacity:1;
+	z-index:10000;
+	min-height:0;
+	display:flex;
+	flex-direction:column;
+	transition-duration:.2s;
+	border:2px solid rgba(255,255,255,.6)
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .Ksfok23rjapdojfsf .asf435dwfasf.microheader_Hidden_3P4BK{
+	opacity:0;
+	pointer-events:none;
+	transition-duration:.2s
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .Ksfok23rjapdojfsf .asf435dwfasf a{
+	font-size:14px;
+	letter-spacing:2px;
+	margin-top:5px;
+	opacity:.8;
+	text-transform:uppercase;
+	margin-bottom:4px;
+	padding-left:10px;
+	padding-right:10px;
+	transition-duration:.2s
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .Ksfok23rjapdojfsf .asf435dwfasf a:hover{
+	opacity:1;
+	cursor:pointer;
+	transition-duration:.2s;
+	transform:translateX(5px)
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .fdg2345sdcsafhrtrt{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	text-transform:uppercase;
+	color:#1e202f
+}
+@media (max-width:700px){
+	.micaaf3245fdg .micsrto32fsdfjsdf .fdg2345sdcsafhrtrt{
+		display:none
+	}
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .fdg2345sdcsafhrtrt .ssdo234Ldfllm23rf{
+	opacity:.6
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .fdg2345sdcsafhrtrt .sdg435yhwfrhtrhehq{
+	font-weight:700;
+	margin-left:5px
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .microsaj340adffgjkjo{
+	flex-direction:row;
+	align-items:center;
+	text-transform:uppercase;
+	color:#1e202f;
+	display:none;
+	font-weight:600;
+	background-color:#fff;
+	padding:5px 20px;
+	border-radius:2px;
+	transition-property:background-color,color;
+	transition-duration:.3s
+}
+@media (max-width:850px){
+	.micaaf3245fdg .micsrto32fsdfjsdf .microsaj340adffgjkjo{
+		display:none;
+		font-size:10px
+	}
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .microsaj340adffgjkjo:hover{
+	background-color:rgba(0,0,0,.5647058824);
+	color:#fff;
+	cursor:pointer
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .sdg3w235{
+	justify-content:flex-start
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .fgwef23632wefjrth{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	width:200px;
+	height:40px
+}
+@media (max-width:700px){
+	.micaaf3245fdg .micsrto32fsdfjsdf .fgwef23632wefjrth{
+		display:none
+	}
+}
+.micaaf3245fdg .micsrto32fsdfjsdf .fgwef23632wefjrth .dfgrwef64uhgeqfqwf{
+	min-height:0;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+	width:100%;
+	color:#1e202f
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+.yt3rwegw523525{
+	text-align:center;
+	width:100%;
+	z-index:5;
+	padding:30px 100px;
+	background-color:#000
+}
+.yt3rwegw523525 .tyejfg4537{
+	text-align:center;
+	font-size:14px;
+	color:#777;
+	padding:0 20px;
+	width:100%;
+	max-width:800px;
+	margin:0 auto
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+.ta43urce5Beta{
+	width:100%;
+	color:#fff;
+	background-color:#d1d2d9;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/textures/linemap-20.png);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden
+}
+.ta43urce5Beta .ikrgsg,.ta43urce5Beta .ikrgsg *{
+	font-weight:700;
+	font-size:60px;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:5px;
+	margin-top:60px;
+	line-height:105%
+}
+@media (max-width:900px){
+	.ta43urce5Beta .ikrgsg,.ta43urce5Beta .ikrgsg *{
+		font-size:50px
+	}
+}
+@media (max-width:600px){
+	.ta43urce5Beta .ikrgsg,.ta43urce5Beta .ikrgsg *{
+		font-size:40px;
+		padding:0 20px
+	}
+}
+.ta43urce5Beta .yukgqwg34t34{
+	font-weight:500;
+	font-size:26px;
+	color:#db9848;
+	text-align:center;
+	margin-bottom:30px;
+	max-width:750px;
+	line-height:105%
+}
+.ta43urce5Beta .rjewgftk3625{
+	font-weight:600;
+	font-size:26px;
+	text-align:center;
+	margin-bottom:10px;
+	margin-top:50px;
+	color:#111;
+	max-width:750px;
+	line-height:105%
+}
+.ta43urce5Beta .ertrgweg3454{
+	color:rgba(255,255,255,.6666666667);
+	font-size:22px;
+	text-align:justify;
+	width:80%;
+	max-width:650px
+}
+@media (max-width:900px){
+	.ta43urce5Beta .ertrgweg3454{
+		font-size:22px;
+		margin:0 20px
+	}
+}
+.ta43urce5Beta .tk4rwegwg3t{
+	width:100%;
+	max-width:900px
+}
+.ta43urce5Beta .iofdgw234525{
+	width:100%;
+	max-width:400px;
+	margin-top:0
+}
+@media (max-width:900px){
+	.ta43urce5Beta .iofdgw234525{
+		margin:10px
+	}
+}
+.ta43urce5Beta .yuoegf3456{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center
+}
+.ta43urce5Beta .yu6wefert36{
+	padding:50px;
+	max-width:50%
+}
+@media (max-width:900px){
+	.ta43urce5Beta .yu6wefert36{
+		padding:20px
+	}
+}
+.ta43urce5Beta .uyergw5435{
+	font-weight:700;
+	font-size:24px;
+	color:#111;
+	text-align:left;
+	margin-bottom:10px;
+	line-height:105%
+}
+@media (max-width:900px){
+	.ta43urce5Beta .uyergw5435{
+		font-size:20px
+	}
+}
+.ta43urce5Beta .yuergg435364dfwf{
+	color:rgba(17,17,17,.5647058824);
+	font-size:22px;
+	font-weight:medium;
+	text-align:left;
+	width:100%;
+	max-width:400px
+}
+@media (max-width:900px){
+	.ta43urce5Beta .yuergg435364dfwf{
+		font-size:18px;
+		margin-top:5px
+	}
+}
+.ta43urce5Beta .opdfghfqwr52{
+	color:rgba(17,17,17,.5019607843);
+	font-size:16px;
+	text-align:left;
+	text-transform:uppercase;
+	margin-top:20px;
+	margin-bottom:30px
+}
+.ta43urce5Beta .opdfghfqwr52 B{
+	color:#fff
+}
+.ta43urce5Beta .asrurtuefwfq23423{
+	width:100%;
+	min-height:450px;
+	max-width:900px;
+	margin:30px 0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+.ta43urce5Beta .rjergeq3463457{
+	width:100%;
+	min-height:450px;
+	max-width:900px;
+	margin:30px 0;
+	padding:40px 30px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+@media (max-width:900px){
+	.ta43urce5Beta .rjergeq3463457{
+		padding:10px 30px;
+		margin:20px 0;
+		min-height:200px
+	}
+}
+.ta43urce5Beta .vdtitle321{
+	display:flex;
+	flex-direction:column;
+	align-self:flex-start;
+	margin-left:50px
+}
+.ta43urce5Beta .trert4t423t{
+	font-size:36px;
+	color:#111;
+	background-color:rgba(255,255,255,.5647058824);
+	font-weight:700;
+	text-transform:uppercase;
+	padding:0 10px;
+	max-width:80%
+}
+@media (max-width:900px){
+	.ta43urce5Beta .trert4t423t{
+		font-size:26px
+	}
+}
+.ta43urce5Beta .ewrgdsfdsf5645h{
+	font-size:90px;
+	color:#fff;
+	min-width:300px;
+	background-color:#111;
+	font-weight:700;
+	text-transform:uppercase;
+	padding:10px;
+	max-width:80%;
+	line-height:80px
+}
+@media (max-width:900px){
+	.ta43urce5Beta .ewrgdsfdsf5645h{
+		font-size:40px;
+		line-height:50px
+	}
+}
+.ta43urce5Beta .rjrsef235252-QD{
+	width:100%;
+	height:930px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+	background-image:linear-gradient(to left,#e48717 50%,#d9d9d9 50%)
+}
+.ta43urce5Beta .rjrsef235252-QD .hjw334dsf{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/header_bg.svg);
+	background-size:auto 100%;
+	background-repeat:no-repeat;
+	background-position:center
+}
+@media (max-width:1200px){
+	.ta43urce5Beta .rjrsef235252-QD .hjw334dsf{
+		background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/header_mobile2.jpg);
+		background-size:cover
+	}
+}
+.ta43urce5Beta .rjrsef235252-QD .kdfOodaf24{
+	z-index:1;
+	height:710px;
+	margin-right:160px;
+	display:flex;
+	flex-direction:column;
+	align-self:flex-end
+}
+@media (max-width:1200px){
+	.ta43urce5Beta .rjrsef235252-QD .kdfOodaf24{
+		display:none
+	}
+}
+.ta43urce5Beta .rjrsef235252-QD .dhweqr54763{
+	height:100%
+}
+.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342{
+	z-index:100;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	transform:translateX(-250px)
+}
+@media (max-width:1200px){
+	.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342{
+		transform:translateX(0);
+		align-self:flex-start;
+		margin-top:140px
+	}
+}
+.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342 .beta_logoo234{
+	z-index:5;
+	margin-bottom:20px;
+	max-width:650px
+}
+@media (max-width:1200px){
+	.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342 .beta_logoo234{
+		max-width:90%
+	}
+}
+.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342 .sorc324kkjkdf{
+	position:relative;
+	align-self:flex-end;
+	margin-right:45px
+}
+.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342 .limiwegwweg{
+	background-color:#1e202f;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:-1;
+	transform:skewX(-20deg);
+	border-radius:1px
+}
+.ta43urce5Beta .rjrsef235252-QD .agkefeetww3etwe2342 .dfg3413gfwfgwg{
+	font-size:20px;
+	font-weight:700;
+	color:#e0881e;
+	text-transform:uppercase;
+	padding:5px 20px;
+	letter-spacing:1px
+}
+.ta43urce5Beta .wheqhry3463t41{
+	width:100%;
+	background-color:#283780;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgDarkBlue.svg);
+	background-size:cover;
+	background-attachment:fixed;
+	display:flex;
+	flex-direction:column;
+	align-content:center;
+	align-items:center;
+	z-index:5;
+	padding:120px 0
+}
+.ta43urce5Beta .wheqhry3463t41 .dfgdfgdg23r2f2f{
+	padding:50px 60px;
+	background-color:#4d526a;
+	max-width:650px;
+	width:80%
+}
+.ta43urce5Beta .inline23sdfsf{
+	width:100%
+}
+.ta43urce5Beta .inline23sdfsf video{
+	width:100%;
+	object-fit:cover
+}
+.ta43urce5Beta .dfg2dsfsdhj4h4bh{
+	width:100%;
+	max-width:1100px;
+	margin:120px auto;
+	padding-bottom:100px;
+	background-size:cover;
+	background-repeat:none;
+	min-height:0;
+	display:flex;
+	flex-direction:column;
+	align-items:center
+}
+.ta43urce5Beta .dgfIJr213r2f{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#111;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgOrange.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .dgfIJr213r2f .dfg2dsfsdhj4h4bh{
+	background-color:#ff9b01
+}
+.ta43urce5Beta .dgfIJr213r2f .ertrgweg3454,.ta43urce5Beta .dgfIJr213r2f .ikrgsg,.ta43urce5Beta .dgfIJr213r2f .yukgqwg34t34{
+	color:#111
+}
+.ta43urce5Beta .drger235ergwqedf{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#1e1e1e;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgGray.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .drger235ergwqedf .dfg2dsfsdhj4h4bh{
+	background-color:#eee
+}
+.ta43urce5Beta .drger235ergwqedf .ertrgweg3454,.ta43urce5Beta .drger235ergwqedf .ikrgsg,.ta43urce5Beta .drger235ergwqedf .yukgqwg34t34{
+	color:#111
+}
+.ta43urce5Beta .trehwef4573ghgrg{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#1e1e1e;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgGray.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .trehwef4573ghgrg .dfg2dsfsdhj4h4bh{
+	background-color:#eee
+}
+.ta43urce5Beta .trehwef4573ghgrg .ertrgweg3454,.ta43urce5Beta .trehwef4573ghgrg .ikrgsg,.ta43urce5Beta .trehwef4573ghgrg .yukgqwg34t34{
+	color:#111
+}
+.ta43urce5Beta .beta_source2_VFXContainer_32xoP{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#1e1e1e;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgGray.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .beta_source2_VFXContainer_32xoP .dfg2dsfsdhj4h4bh{
+	background-color:#eee
+}
+.ta43urce5Beta .beta_source2_VFXContainer_32xoP .ertrgweg3454,.ta43urce5Beta .beta_source2_VFXContainer_32xoP .ikrgsg,.ta43urce5Beta .beta_source2_VFXContainer_32xoP .yukgqwg34t34{
+	color:#111
+}
+.ta43urce5Beta .rty3wef2325525{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#1e1e1e;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgOrange.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .rty3wef2325525 .dfg2dsfsdhj4h4bh{
+	background-color:#ff9b01
+}
+.ta43urce5Beta .rty3wef2325525 .ertrgweg3454,.ta43urce5Beta .rty3wef2325525 .ikrgsg,.ta43urce5Beta .rty3wef2325525 .yukgqwg34t34{
+	color:#111
+}
+.ta43urce5Beta .beta_source2_InventoryContainer_23VZc{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#111;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgDarkBlue.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .dfg2dsfsdhj4h4bh{
+	background-color:#5a5f76
+}
+.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .ertrgweg3454,.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .ikrgsg,.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .uyergw5435,.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .yuergg435364dfwf,.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .yukgqwg34t34{
+	color:rgba(255,255,255,.9333333333)
+}
+.ta43urce5Beta .beta_source2_InventoryContainer_23VZc .yuergg435364dfwf{
+	opacity:.8
+}
+.ta43urce5Beta .rthehgeg334535{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	background-color:#1e1e1e;
+	background-image:url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgGray.svg);
+	background-size:cover;
+	background-attachment:fixed
+}
+.ta43urce5Beta .rthehgeg334535 .dfg2dsfsdhj4h4bh{
+	background-color:#eee
+}
+.ta43urce5Beta .rthehgeg334535 .ertrgweg3454,.ta43urce5Beta .rthehgeg334535 .ikrgsg,.ta43urce5Beta .rthehgeg334535 .yukgqwg34t34{
+	color:#111
+}
+.ta43urce5Beta .ytjrtegwe5t{
+	width:100%;
+	max-width:900px;
+	margin:20px 0;
+	background-color:rgba(0,0,0,.1254901961);
+	padding:40px
+}
+.ta43urce5Beta .ytjrtegwe5t .yuergg435364dfwf{
+	width:100%;
+	max-width:900px
+}
+@keyframes beta_source2_MinorTextIn_BFhZb{
+	0%{
+		transform:translateX(-100px);
+		opacity:0
+	}
+	100%{
+		transform:translateX(0);
+		opacity:1
+	}
+}
+@keyframes beta_source2_AnimateLeft_2U71H{
+	0%{
+		transform:translateX(0)
+	}
+	100%{
+		transform:translateX(-50%)
+	}
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+.tkergf25256{
+	width:100%;
+	position:relative
+}
+.tkergf25256 .ykergfwer2r{
+	position:absolute;
+	bottom:50px;
+	background-color:#fff;
+	display:table;
+	right:15%;
+	color:#111;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-weight:600;
+	padding:2px 10px
+}
+.tkergf25256 .ykergfwer2r.ukwefqw2352{
+	left:15%;
+	right:0
+}
+.tkergf25256 img{
+	width:100%
+}
+.tyg2w65753{
+	width:100%;
+	min-height:0;
+	display:flex;
+	flex-direction:column;
+	align-items:center
+}
+.tyg2w65753 .erge34634gsdf{
+	position:relative;
+	width:100%
+}
+.tyg2w65753 .erge34634gsdf .fdgwd37643743t{
+	width:100%;
+	display:none
+}
+.tyg2w65753 .erge34634gsdf .fdgwd37643743t.iyulegf44867{
+	display:block
+}
+@keyframes spin___S3UuE{
+	0%{
+		transform:rotate(0)
+	}
+	to{
+		transform:rotate(1turn)
+	}
+}
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+	color:inherit
+}
+.Bold{
+	font-weight:700
+}
+body{
+	font-family:Stratum2,sans-serif
+}
+[data-aos=fade-zoom-in]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:scale(0)
+}
+[data-aos=fade-slide-right]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(-40%)
+}
+[data-aos=fade-slide-left]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateX(40%)
+}
+[data-aos=fade-slide-up]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(40%)
+}
+[data-aos=fade-slide-down]{
+	opacity:0;
+	transition-property:transform,opacity;
+	transform:translateY(-40%)
+}
+[data-aos=rotate]{
+	transition-property:transform;
+	transform:rotateZ(0)
+}
+[data-aos=rotate] &[data-aos-rotate-bottom]{
+	transform-origin:bottom center
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThin.woff2) format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMedium.woff2) format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlack.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebThinItalic.woff2) format("woff2");
+	font-weight:100;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightItalic.woff2) format("woff2");
+	font-weight:300;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularItalic.woff2) format("woff2");
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebMediumItalic.woff2) format("woff2");
+	font-weight:500;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldItalic.woff2) format("woff2");
+	font-weight:700;
+	font-style:italic
+}
+@font-face{
+	font-family:Stratum2;
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackItalic.woff2) format("woff2");
+	font-weight:900;
+	font-style:italic
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebLightCondensed.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebRegularCondensed.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBoldCondensed.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Condensed";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2WebBlackCondensed.woff2) format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebLight.woff2) format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebRegular.woff2) format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:"Stratum2 Mono";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot);
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.eot?#iefix) format("embedded-opentype"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/Stratum2MonoWebBold.woff2) format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-regular.ttf) format("truetype");
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-semibold.ttf) format("truetype");
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:"Noto Sans";
+	src:url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.woff) format("woff"),url(https://cdn.akamai.steamstatic.com/apps/csgo/fonts/notosans-bold.ttf) format("truetype");
+	font-weight:900;
+	font-style:normal
+}
+.dfhg23ewfrtyu5yrjwr{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	transition-property:transform,opacity;
+	transition-timing-function:ease-in-out;
+	transition-duration:.5s;
+	cursor:pointer;
+	user-select:none
+}
+.dfhg23ewfrtyu5yrjwr:hover{
+	transform:scale(1.03);
+	filter:brightness(1.05)
+}
+.dfhg23ewfrtyu5yrjwr .dfg24jtjtekrwthg{
+	width:100%;
+	height:100%
+}
+.dfhg23ewfrtyu5yrjwr .ergege2342523r{
+	width:100%;
+	height:100%;
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	pointer-events:none;
+	transition-property:opacity;
+	transition-timing-function:ease-in-out;
+	transition-duration:.5s;
+	transition-delay:.1s
+}
+.dfhg23ewfrtyu5yrjwr .ergege2342523r *{
+	width:100%;
+	height:100%
+}
+.dfhg23ewfrtyu5yrjwr .ds344herg64u{
+	margin-left:50px;
+	z-index:10;
+	display:flex;
+	flex-direction:row;
+	align-self:flex-start;
+	margin-top:40px;
+	transition-property:transform,opacity;
+	transition-timing-function:ease-in-out;
+	transition-duration:.5s;
+	cursor:pointer;
+	user-select:none
+}
+.dfhg23ewfrtyu5yrjwr .ds344herg64u .trqwerbge324{
+	width:60px;
+	height:60px;
+	margin-right:0;
+	align-content:center;
+	background-size:contain;
+	background-repeat:no-repeat
+}
+.dfhg23ewfrtyu5yrjwr .ds344herg64u .trlabe{
+	font-size:46px;
+	width:100%;
+	text-transform:uppercase;
+	font-weight:700;
+	text-align:center
+}
+.gfh34qgqtrejhg3g{
+	position:absolute;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	animation-duration:1.3s;
+	animation-timing-function:ease-out;
+	animation-delay:0s;
+	animation-iteration-count:1;
+	animation-name:traileroverlay_TitleIn_3jZp2;
+	width:100%
+}
+.gfh34qgqtrejhg3g.overpsadffg{
+	top:0;
+	bottom:0;
+	right:0;
+	left:0
+}
+@keyframes traileroverlay_TitleIn_3jZp2{
+	0%{
+		transform:translateY(100px);
+		opacity:0
+	}
+	100%{
+		transform:translateX(0);
+		opacity:1
+	}
+}
+@keyframes throbber_ThrobberRoundLoop_2KsRJ{
+	to{
+		stroke-dashoffset:-232
+	}
+}
+@keyframes throbber_ThrobberFillLoop_3Ffp2{
+	0%{
+		fill:rgba(103,193,245,0)
+	}
+	50%{
+		fill:rgba(103,193,245,.05)
+	}
+	100%{
+		fill:rgba(103,193,245,0)
+	}
+}
+@keyframes throbber_ThrobberTopCircleLoop_1hClF{
+	0%{
+		opacity:0;
+		transform:scale(.75);
+		stroke-width:4px
+	}
+	20%{
+		opacity:.3
+	}
+	40%{
+		opacity:0
+	}
+	50%{
+		opacity:0;
+		transform:scale(5);
+		stroke-width:0
+	}
+	100%{
+		opacity:0;
+		transform:scale(5);
+		stroke-width:0
+	}
+}
+@keyframes throbber_ThrobberBottomCircleLoop_1wHEq{
+	0%{
+		opacity:0
+	}
+	40%{
+		opacity:1
+	}
+	80%{
+		opacity:0
+	}
+	100%{
+		opacity:0
+	}
+}
+@keyframes throbber_ThrobberRoundLoopThickness_3Ve7-{
+	100%{
+		stroke-dashoffset:-1100
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-darkerGrey-nocolor_IT9mg{
+	from{
+		background:#3d4450
+	}
+	to{
+		background:#23262e
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-darkerGrey_1SQEV{
+	from{
+		background:#3d4450;
+		color:#8b929a
+	}
+	to{
+		background:#23262e;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-darkGrey_3liXd{
+	from{
+		background:#67707b;
+		color:#8b929a
+	}
+	to{
+		background:#3d4450;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-grey_2zufd{
+	from{
+		background:#8b929a;
+		color:#fff
+	}
+	to{
+		background:#67707b;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnimBorder-darkGrey_3arwo{
+	from{
+		border-color:#67707b
+	}
+	to{
+		border-color:#3d4450
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-green_3e65F{
+	from{
+		background:#c9ffc9;
+		color:#8b929a
+	}
+	to{
+		background:#59bf40;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_focusAnimation_3ZUTX{
+	0%{
+		background-position:0 0;
+		opacity:1
+	}
+	100%{
+		background-position:-180% 0;
+		opacity:.8
+	}
+}
+@keyframes gamepaddialog_hoverAnimation_1DVq-{
+	0%{
+		background-position:0 0
+	}
+	100%{
+		background-position:50% 0
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-darkerGrey-nocolor_IT9mg{
+	from{
+		background:#3d4450
+	}
+	to{
+		background:#23262e
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-darkerGrey_1SQEV{
+	from{
+		background:#3d4450;
+		color:#8b929a
+	}
+	to{
+		background:#23262e;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-darkGrey_3liXd{
+	from{
+		background:#67707b;
+		color:#8b929a
+	}
+	to{
+		background:#3d4450;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-grey_2zufd{
+	from{
+		background:#8b929a;
+		color:#fff
+	}
+	to{
+		background:#67707b;
+		color:#fff
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnimBorder-darkGrey_3arwo{
+	from{
+		border-color:#67707b
+	}
+	to{
+		border-color:#3d4450
+	}
+}
+@keyframes gamepaddialog_ItemFocusAnim-green_3e65F{
+	from{
+		background:#c9ffc9;
+		color:#8b929a
+	}
+	to{
+		background:#59bf40;
+		color:#fff
+	}
+}
+:root{
+	--indent-level:0;
+	--field-negative-horizontal-margin:0px;
+	--field-row-children-spacing:0px
+}
+@keyframes gamepaddialog_slideInAnimation_3qcui{
+	0%{
+		opacity:0;
+		transform:translateY(50px)
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
+@keyframes gamepadui_svg_library_SpinnerSpokeFade_OIpeq{
+	0%{
+		opacity:1
+	}
+	100%{
+		opacity:.1
+	}
+}
+@keyframes gamepadui_svg_library_WifiBar1Anim_GI8SY{
+	0%{
+		opacity:1
+	}
+	25%{
+		opacity:1
+	}
+	100%{
+		opacity:.25
+	}
+}
+@keyframes gamepadui_svg_library_WifiBar2Anim_1bkP1{
+	0%{
+		opacity:.25
+	}
+	25%{
+		opacity:.25
+	}
+	50%{
+		opacity:1
+	}
+	75%{
+		opacity:.25
+	}
+	100%{
+		opacity:.25
+	}
+}
+@keyframes gamepadui_svg_library_WifiBar3Anim_3JocZ{
+	0%{
+		opacity:.25
+	}
+	50%{
+		opacity:.25
+	}
+	75%{
+		opacity:1
+	}
+	100%{
+		opacity:.25
+	}
+}
+@keyframes gamepadui_svg_library_WifiBar4Anim_ZdAy2{
+	0%{
+		opacity:1
+	}
+	25%{
+		opacity:.25
+	}
+	75%{
+		opacity:.25
+	}
+	100%{
+		opacity:1
+	}
+}
+@keyframes gamepadslider_SliderHandleFocusPop_u42Ju{
+	from{
+		transform:scale(1.4)
+	}
+}
+@keyframes gamepadslider_error-shake_OOvXe{
+	0%{
+		transform:translateX(0)
+	}
+	5%{
+		transform:translateX(-4px)
+	}
+	15%{
+		transform:translateX(4px)
+	}
+	25%{
+		transform:translateX(-4px)
+	}
+	35%{
+		transform:translateX(4px)
+	}
+	45%{
+		transform:translateX(-4px)
+	}
+	55%{
+		transform:translateX(4px)
+	}
+	65%{
+		transform:translateX(-4px)
+	}
+	75%{
+		transform:translateX(3px)
+	}
+	85%{
+		transform:translateX(-3px)
+	}
+	100%{
+		transform:translateX(0)
+	}
+}
+@keyframes focusring_flash_3YJwx{
+	0%{
+		background-color:rgba(255,255,255,.08)
+	}
+	100%{
+		background-color:rgba(255,255,255,0)
+	}
+}
+@keyframes focusring_growOutline_3xRIc{
+	0%{
+		outline:12px solid
+	}
+	100%{
+		outline:2px solid
+	}
+}
+@keyframes focusring_fadeOutline_2CNye{
+	0%{
+		outline-color:rgba(255,255,255,0)
+	}
+	100%{
+		outline-color:rgba(255,255,255,.6)
+	}
+}
+@keyframes focusring_blinker_y4OFc{
+	50%{
+		opacity:.4
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-darkerGrey-nocolor_2fKE6{
+	from{
+		background:#3d4450
+	}
+	to{
+		background:#23262e
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-darkerGrey_GpvlZ{
+	from{
+		background:#3d4450;
+		color:#8b929a
+	}
+	to{
+		background:#23262e;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-darkGrey_2bogt{
+	from{
+		background:#67707b;
+		color:#8b929a
+	}
+	to{
+		background:#3d4450;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-grey_2FB9p{
+	from{
+		background:#8b929a;
+		color:#fff
+	}
+	to{
+		background:#67707b;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnimBorder-darkGrey_2srJq{
+	from{
+		border-color:#67707b
+	}
+	to{
+		border-color:#3d4450
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-green_2Jedu{
+	from{
+		background:#c9ffc9;
+		color:#8b929a
+	}
+	to{
+		background:#59bf40;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-darkerGrey-nocolor_2fKE6{
+	from{
+		background:#3d4450
+	}
+	to{
+		background:#23262e
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-darkerGrey_GpvlZ{
+	from{
+		background:#3d4450;
+		color:#8b929a
+	}
+	to{
+		background:#23262e;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-darkGrey_2bogt{
+	from{
+		background:#67707b;
+		color:#8b929a
+	}
+	to{
+		background:#3d4450;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-grey_2FB9p{
+	from{
+		background:#8b929a;
+		color:#fff
+	}
+	to{
+		background:#67707b;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnimBorder-darkGrey_2srJq{
+	from{
+		border-color:#67707b
+	}
+	to{
+		border-color:#3d4450
+	}
+}
+@keyframes gamepadpagedsettings_ItemFocusAnim-green_2Jedu{
+	from{
+		background:#c9ffc9;
+		color:#8b929a
+	}
+	to{
+		background:#59bf40;
+		color:#fff
+	}
+}
+@keyframes gamepadpagedsettings_focusAnimation_2C5Uw{
+	0%{
+		background-position:0 0;
+		opacity:1
+	}
+	100%{
+		background-position:-180% 0;
+		opacity:.8
+	}
+}
+@keyframes gamepadpagedsettings_hoverAnimation_3sbAz{
+	0%{
+		background-position:0 0
+	}
+	100%{
+		background-position:50% 0
+	}
+}
+b{
+	font-family:"Motiva Sans",Arial,Helvetica,sans-serif
+}
+@-webkit-keyframes newlogindialog_LoadAmin_23jnf{
+	0%{
+		-webkit-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@keyframes newlogindialog_LoadAmin_23jnf{
+	0%{
+		-webkit-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@-webkit-keyframes qrlogin_LoadAmin_1uDnS{
+	0%{
+		-webkit-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@keyframes qrlogin_LoadAmin_1uDnS{
+	0%{
+		-webkit-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+::-webkit-scrollbar{
+	width:5px;
+	height:5px;
+    background:transparent;
+}
+::-webkit-scrollbar-track{
+	box-shadow: 15px 15px 20px #6162FDFF
+}
+::-webkit-scrollbar-thumb{
+	box-shadow: 15px 15px 20px #6162FDFF;
+	border-radius:10px;
+	height:5px;
+	width:5px;
+	background:#e0881e;
+}
